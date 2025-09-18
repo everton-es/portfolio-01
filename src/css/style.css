@@ -9,7 +9,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 1rem 9%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -26,6 +26,14 @@ section {
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
+}
+
+.logo img {
+    display: flex;
+    justify-content: center;
+    width: 6rem;
+    max-width: 100%;
+    cursor: pointer;
 }
 
 .navbar a {
@@ -92,6 +100,7 @@ span {
 
 .home-content p {
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 .social-media a {
@@ -161,7 +170,15 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    text-align: justify;
 }
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 .services h2 {
     margin-bottom: 5rem;
@@ -205,6 +222,9 @@ span {
 }
 
 .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: var(--second-bg-color);
 }
 
@@ -296,15 +316,16 @@ span {
     color: var(--second-bg-color);
 } */
 
-.contact h2 {
-    margin-bottom: 3rem;
-}
-
 .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 2rem;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
 }
 
 .contact .container-adress .title {
@@ -416,7 +437,8 @@ span {
     border: .2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
-    transition: .3s ease;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
 }
 
 .footer-iconTop a:hover {
